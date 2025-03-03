@@ -17,6 +17,7 @@ import axios from "axios";
 export const lambdaHandler = async ({ name }, context) => {
   const smsCall = smsApiCall("2348144210035");
   console.log("🚀 ~ lambdaHandler ~ smsCall:", smsCall)
+  
   const response = {
     statusCode: 200,
     body: JSON.stringify({
